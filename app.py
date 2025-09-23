@@ -24,6 +24,8 @@ client = OpenAI(api_key=API_KEY)
 
 st.title("SAMAritan Beta")
 
+st.subheader("An AI agent that helps improve your human-capital strategy, designed by Phanish Puranam & Markus Reitzig")
+
 # --- Chat history in session state ---
 # Entries can be:
 #   {"role": "user"|"assistant", "content": "text"}  OR
@@ -202,4 +204,5 @@ if user_input:
 
         # Also persist the haiku as a normal assistant turn for transcript/history
         st.session_state.messages.append({"role": "assistant", "content": f"Poet bot:\n{haiku_text}"})
+
 
