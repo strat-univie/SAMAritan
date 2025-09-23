@@ -22,7 +22,7 @@ if not VECTOR_STORE_ID:
 
 client = OpenAI(api_key=API_KEY)
 
-st.title("💬 Responses API + Vector Store")
+st.title("SAMAritan Beta")
 
 # --- Chat history in session state ---
 # Entries can be:
@@ -202,3 +202,4 @@ if user_input:
 
         # Also persist the haiku as a normal assistant turn for transcript/history
         st.session_state.messages.append({"role": "assistant", "content": f"Poet bot:\n{haiku_text}"})
+
